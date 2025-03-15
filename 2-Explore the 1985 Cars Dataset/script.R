@@ -1,9 +1,12 @@
 # Task 1: load libraries
+install.packages('readr')
+install.packages('dplyr')
+
 library(readr)
 library(dplyr)
 
 # Task 2: load data
-cars <- read_csv("cars85.csv")
+cars <- read_csv("Desktop/cars85.csv")
 
 # Task 3: inspect data
 head(cars)
