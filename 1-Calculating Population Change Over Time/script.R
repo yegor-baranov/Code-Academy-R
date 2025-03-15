@@ -6,7 +6,7 @@ calculate_annual_growth <- function(year_one,year_two,pop_y1, pop_y2,city) {
 }
 
 # Write your code starting here:
-city_name = "Istanbul, Turkey"
+city_name <- "Istanbul, Turkey"
 
 pop_year_one <- 691000
 pop_year_two <- 15029231
