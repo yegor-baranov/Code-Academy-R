@@ -48,7 +48,7 @@ ordered_by_engine_size <- cars %>%
 ordered_by_engine_size
 
 # Task 12: choose make
-chosen_make = "porsche"
+chosen_make <- "porsche"
 
 # Task 13: filter rows by make
 chosen_make_details <- cars %>%
