@@ -1,8 +1,3 @@
----
-title: "Introduction to R Syntax"
-output: html_notebook
----
-```{r error=TRUE}
 calculate_annual_growth <- function(year_one,year_two,pop_y1, pop_y2,city) {
   annual_growth <- (((pop_y2 - pop_y1) / pop_y1) * 100) / (year_two-year_one)
   message <- paste("From", year_one, "to", year_two, "the population of", city, "grew by approximately", annual_growth, "% each year.")
@@ -29,4 +24,3 @@ print(annual_gr)
 annual_gr_function <- calculate_annual_growth(year_one, year_two, pop_year_one, pop_year_two, city_name)
 
 print(annual_gr_function)
-```
