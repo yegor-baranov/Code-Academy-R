@@ -23,7 +23,7 @@ cars <- cars %>%
 cars
 
 # Task 7: define threshold
-mpg_threshold = 30
+mpg_threshold <- 30
 
 # Task 8: add column
 cars <- cars %>% 
