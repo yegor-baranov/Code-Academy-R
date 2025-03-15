@@ -1,6 +1,6 @@
 # Codecademy projects for R All In One!
 
-This is list of the projects I had to create to finish R on Codecademy (https://www.codecademy.com).
+This is list of the projects I had to create to finish Learn R course on Codecademy (https://www.codecademy.com).
 
 ## Learn R: Introduction
 
