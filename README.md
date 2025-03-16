@@ -19,4 +19,4 @@ Learn how to organize and modify data in R using data frames and dplyr.
 
 Learn how to prepare data for analysis in R using dplyr and tidyr.
 
-2. Cleaning US Census Data
+3. Cleaning US Census Data
