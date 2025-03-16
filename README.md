@@ -13,3 +13,10 @@ Learn the basics of R Syntax and jumpstart your journey into data analysis.
 Learn how to organize and modify data in R using data frames and dplyr.
 
 2. Explore the 1985 Cars Dataset
+
+
+## Learn R: Data Cleaning
+
+Learn how to prepare data for analysis in R using dplyr and tidyr.
+
+2. Cleaning US Census Data
