@@ -1,7 +1,6 @@
 ---
 title: "1985 Cars"
-output: html_document
-date: "2025-03-15"
+output: html_notebook
 ---
 
 # Task 1
