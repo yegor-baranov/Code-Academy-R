@@ -1,7 +1,6 @@
 ---
 title: "Introduction to R Syntax"
-output: html_document
-date: "2025-03-14"
+output: html_notebook
 ---
 
 # Function given in Project
