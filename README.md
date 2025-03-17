@@ -20,3 +20,9 @@ Learn how to organize and modify data in R using data frames and dplyr.
 Learn how to prepare data for analysis in R using dplyr and tidyr.
 
 3. Cleaning US Census Data
+
+## Learn R: Fundamentals of Data Visualization with ggplot2
+
+Learn the basics of how to create visualizations using the popular R package ggplot2.
+
+4. Visualizing Carbon Dioxide Levels
