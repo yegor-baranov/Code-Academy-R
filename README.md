@@ -26,3 +26,9 @@ Learn how to prepare data for analysis in R using dplyr and tidyr.
 Learn the basics of how to create visualizations using the popular R package ggplot2.
 
 4. Visualizing Carbon Dioxide Levels
+
+## Learn R: Aggregates
+
+Learn the basics of aggregate functions in R with dplyr, which let us calculate quantities that describe groups of data.
+
+5. A/B Testing for ShoeFly.com
