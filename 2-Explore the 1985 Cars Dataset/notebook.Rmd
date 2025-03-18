@@ -1,5 +1,5 @@
 ---
-title: "1985 Cars"
+title: "Explore the 1985 Cars Dataset"
 output: html_notebook
 ---
 
