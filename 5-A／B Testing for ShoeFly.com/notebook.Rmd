@@ -1,5 +1,5 @@
 ---
-title: "Aggregates in R"
+title: "A/B Testing for ShoeFly.com"
 output: html_notebook
 ---
 
