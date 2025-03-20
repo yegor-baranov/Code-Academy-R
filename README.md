@@ -37,3 +37,9 @@ Learn the basics of aggregate functions in R with dplyr, which let us calculate 
 Learn the basics of joining tables together in R with dplyr.
 
 6. Page Visits Funnel
+
+## Learn R: Mean, Median, and Mode
+
+Learn to use R or manually calculate the mean, median, and mode of real-world datasets.
+
+7. Central Tendency for Housing Data
