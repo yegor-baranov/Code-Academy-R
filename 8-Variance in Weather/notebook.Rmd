@@ -77,5 +77,4 @@ hourly_stats <- london_data %>%
               standard_deviation = sd(Humidity))
 
 hourly_stats
-
 ```
