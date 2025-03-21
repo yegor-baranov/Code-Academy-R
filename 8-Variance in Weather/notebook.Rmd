@@ -1,1 +1,81 @@
+---
+title: "Variance in Weather"
+output: html_notebook
+---
 
+# Explore the Data
+
+```{r message=FALSE, warning=FALSE, error=TRUE}
+library(readr)
+library(dplyr)
+```
+
+```{r error=TRUE}
+london_data <- read_csv("weather.csv",show_col_types = FALSE)
+```
+
+```{r error=TRUE}
+# Inspect Data
+head(london_data)
+
+print("How often were measurements taken?: 3-5 times per hour")
+print("Which columns might be the most useful when thinking about planning a trip?: Temperature")
+
+nrow(london_data)
+```
+
+# Looking At Temperature
+
+```{r error=TRUE}
+temp <- london_data$TemperatureC
+
+# Variance and SD for the year
+average_temp <- mean(temp)
+temperature_var <- var(temp)
+temperature_standard_deviation <- sd(temp)
+
+temperature_var
+temperature_standard_deviation
+```
+
+# Filtering By Month
+
+```{r error=TRUE}
+# Inspect once again
+head(london_data)
+tail(london_data)
+
+# Get monthly temperature average
+june <- london_data %>%
+  filter(month == "6")
+
+july <- london_data %>%
+  filter(month == "7")
+
+print(mean(june$TemperatureC))
+print(mean(july$TemperatureC))
+
+print(sd(june$TemperatureC))
+print(sd(july$TemperatureC))
+
+# Analyze by month
+monthly_stats <- london_data %>%
+    group_by(month) %>%
+    summarize(mean = mean(TemperatureC),
+              standard_deviation = sd(TemperatureC)) %>%
+
+monthly_stats
+```
+
+# Explore on Your Own
+
+```{r error=TRUE}
+# Analyze by hour
+hourly_stats <- london_data %>%
+    group_by(hour) %>%
+    summarize(mean = mean(Humidity),
+              standard_deviation = sd(Humidity))
+
+hourly_stats
+
+```
