@@ -1,0 +1,90 @@
+---
+title: "Life Expectancy By Country"
+output: html_notebook
+---
+
+# Access the Data
+
+```{r message=FALSE, warning=FALSE, error=TRUE}
+# load packages
+library(ggplot2)
+library(readr)
+library(dplyr)
+```
+
+```{r error=TRUE}
+# import and inspect data
+data <- read_csv("Desktop/country_data.csv", show_col_types = FALSE)
+head(data)
+```
+
+```{r error=TRUE}
+# life expectancy
+life_expectancy <- data %>%
+  pull(Life_expectancy)
+```
+
+# Find the Quantiles
+
+```{r error=TRUE}
+# life expectancy quartiles
+life_expectancy_quartiles <- quantile(life_expectancy, c(0.25, 0.5, 0.75))
+
+
+life_expectancy_quartiles
+```
+
+```{r error=TRUE}
+# plot histogram of life expectancy
+hist(life_expectancy)
+
+```
+# Splitting the Data by GDP
+
+```{r error=TRUE}
+# gdp
+gdp <- data %>%
+  pull(GDP)
+
+# median gdp
+median_gdp <- median(gdp)
+  
+median_gdp
+```
+
+```{r error=TRUE}
+# low gdp
+low_gdp <- data %>%
+  filter(GDP <= median_gdp)
+
+# high gdp
+high_gdp <- data %>%
+  filter(GDP > median_gdp)
+
+# low gdp quartiles
+low_gdp <- data %>%
+  filter(GDP <= median_gdp) %>%
+  pull(Life_expectancy)
+
+low_gdp_quartiles <- quantile(low_gdp, c(0.25, 0.5, 0.75))
+
+low_gdp_quartiles
+
+# high gdp quartiles
+high_gdp <- data %>%
+  filter(GDP > median_gdp) %>%
+  pull(Life_expectancy)
+
+high_gdp_quartiles <- quantile(high_gdp, c(0.25, 0.5, 0.75))
+
+high_gdp_quartiles
+```
+# Histogram and Conclusions
+
+```{r message=FALSE, error=TRUE}
+# plot low gdp histogram
+hist(low_gdp,col='red')
+
+# plot high gdp histogram
+hist(high_gdp,col='blue')
+```
