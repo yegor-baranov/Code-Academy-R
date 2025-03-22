@@ -50,7 +50,7 @@ In this module, you will learn how to quantify the spread of the dataset by calc
 
 8. Variance in Weather
 
-## Learn R: Quartiles, Qunatiles, and Interquartile Range
+## Learn R: Quartiles, Quantiles, and Interquartile Range
 
 In this course, you will learn how to calculate three important descriptive statistics that describe the spread of the data.
 
