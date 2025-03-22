@@ -50,7 +50,7 @@ In this module, you will learn how to quantify the spread of the dataset by calc
 
 8. Variance in Weather
 
-## Learn R: Quaartiles, Qunatiles, and Interquartile Range
+## Learn R: Quartiles, Qunatiles, and Interquartile Range
 
 Learn to use R or manually calculate the mean, median, and mode of real-world datasets.
 
