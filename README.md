@@ -52,6 +52,6 @@ In this module, you will learn how to quantify the spread of the dataset by calc
 
 ## Learn R: Quartiles, Qunatiles, and Interquartile Range
 
-Learn to use R or manually calculate the mean, median, and mode of real-world datasets.
+In this course, you will learn how to calculate three important descriptive statistics that describe the spread of the data.
 
 9. Life Expectancy by Country
