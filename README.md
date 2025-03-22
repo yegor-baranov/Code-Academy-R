@@ -1,4 +1,4 @@
-# Codecademy projects for R All In One!
+# Codecademy projects for R!
 
 This is list of the projects I had to create to finish Learn R course on Codecademy (https://www.codecademy.com).
 
@@ -43,3 +43,15 @@ Learn the basics of joining tables together in R with dplyr.
 Learn to use R or manually calculate the mean, median, and mode of real-world datasets.
 
 7. Central Tendency for Housing Data
+
+## Learn R: Variance and Standard Deviation
+
+In this module, you will learn how to quantify the spread of the dataset by calculating the variance and standard deviation in R.
+
+8. Variance in Weather
+
+## Learn R: Quaartiles, Qunatiles, and Interquartile Range
+
+Learn to use R or manually calculate the mean, median, and mode of real-world datasets.
+
+9. Life Expectancy by Country
