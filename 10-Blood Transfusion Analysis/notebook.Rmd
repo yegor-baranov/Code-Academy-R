@@ -1,0 +1,98 @@
+---
+title: "Blood Transfusion Analysis"
+output: html_notebook
+---
+
+In this project, you will leverage your knoweldge of hypothesis testing to help drive informed decisions at a company inspecting blood transfusion data, Familiar.
+
+You will use your combined knowledge of R and hypothesis testing to implement an analysis. The project will require implementation of standard deviation, one and two sample t-tests, as well as an understanding of the significance on the resulting p-value to give a recommendation on the results of the study.
+
+# One Sample T-Test
+
+```{r error=TRUE}
+# load data
+vein_lifespans <- c(76.93767, 75.99336, 74.79815, 74.50202, 77.48889, 72.14257, 75.99303, 76.34155, 77.48476, 76.53210, 76.25509, 77.58398, 77.04737, 72.87475, 77.43505, 77.49234, 78.32672, 73.34370, 79.96916, 74.83801)
+artery_lifespans <-c(6.33537, 76.92308, 75.95244, 74.54498, 76.40450, 73.07925, 77.02354, 74.11742, 77.38651, 73.04477, 74.96312, 73.31954, 75.85740, 76.15265, 73.35510, 73.90221, 73.77121, 68.31490, 74.63976, 78.38548)
+```
+
+1.  Familiar want to know if their most basic package, the Vein Pack, actually has a significant impact on the subscribers. It would be a marketing goldmine if it could show that subscribers to the Vein Pack live longer than the general public. Lifespans of Vein Pack users are given in the variable `vein_lifespans`, which has been loaded into `notebook.Rmd`. View `vein_lifespans`.
+
+```{r error=TRUE}
+# view vein_lifespans here:
+vein_lifespans
+```
+
+2.  You’d like to find out if the average lifespan of a Vein Pack subscriber is *significantly different* from the average life expectancy of `71` years. Begin by finding mean lifespan of users of the Vein Pack, and save the result to `vein_lifespans_mean`. View `vein_lifespans_mean`.
+
+```{r error=TRUE}
+# calculate vein_lifespans_mean here:
+vein_lifespans_mean <- mean(vein_lifespans)
+
+vein_lifespans_mean
+```
+
+3.  Now find the standard deviation of the lifespan of users of the Vein Pack. Save the result to `vein_lifespans_sd`, and view it
+
+```{r error=TRUE}
+# calculate vein_lifespans_sd here:
+vein_lifespans_sd <- sd(vein_lifespans)
+
+vein_lifespans_sd
+```
+
+4.  Use a One Sample T-Test to compare `vein_lifespans` to the average life expectancy, `71`. Save the result into a variable called `vein_pack_test`, and view it. Are the results significant? Check the p-value of `vein_pack_test`. If it’s less than `0.05`, the standard threshold, you’ve got significance!
+
+```{r error=TRUE}
+# perform one sample t-test here:
+vein_pack_test <- t.test(vein_lifespans, mu = 71)
+
+vein_pack_test
+
+# Therefore Reject the Null Hypothesis
+```
+
+# Two Sample T-Test
+
+5.  In order to differentiate Familiar’s product lines, they would like you to compare the lifespan data for the Vein Pack with their more premium product, the Artery Pack.
+
+Lifespans of Artery Pack users are given in the variable `artery_lifespans`, which has been loaded into `notebook.Rmd`. View `artery_lifespans`.
+
+```{r error=TRUE}
+# view artery_lifespans here:
+artery_lifespans
+```
+
+6.  Before you run a Two Sample T-test to compare the Vein Pack and the Artery pack, you want to learn more about the data collected on users of the Artery pack.
+
+Begin by finding mean lifespan of users of the Artery Pack, and save the result to `artery_lifespans_mean`. View `artery_lifespans_mean`.
+
+```{r error=TRUE}
+# calculate artery_lifespans_mean here:
+artery_lifespans_mean <- mean(artery_lifespans)
+
+artery_lifespans_mean
+```
+
+7.  Now find the standard deviation of the lifespan of users of the Artery Pack.
+
+Save the result to `artery_lifespans_sd`, and view it.
+
+```{r error=TRUE}
+# calculate artery_lifespans_sd here:
+artery_lifespans_sd <- sd(artery_lifespans)
+
+artery_lifespans_sd
+```
+
+8.  Use a Two Sample T-Test to compare `vein_lifespans` to `artery_lifespans`. Save the result into a variable called `package_comparison_results`, and view it.
+
+Are the results significant? Check the p-value of `package_comparison_results`. If it’s less than `0.05`, the standard threshold, you’ve got significance!
+
+```{r error=TRUE}
+# perform two sample t-test here:
+package_comparison_results <- t.test(vein_lifespans, artery_lifespans)
+
+package_comparison_results
+
+# Fail to Reject the Null Hypothesis
+```
