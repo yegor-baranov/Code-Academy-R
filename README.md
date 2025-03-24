@@ -55,3 +55,9 @@ In this module, you will learn how to quantify the spread of the dataset by calc
 In this course, you will learn how to calculate three important descriptive statistics that describe the spread of the data.
 
 9. Life Expectancy by Country
+
+## Learn R: Hypothesis Testing
+
+Learn about the statistics used to run hypothesis tests. Then, learn how to use R to run different t-tests that compare distributions.
+
+10. Blood Transfusion Analysis
